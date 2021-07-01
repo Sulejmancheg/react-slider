@@ -7,6 +7,7 @@
   overflow: hidden;
   position: relative;
   background: #000;
+  display: flex;
 }
 
 .Arrows {
@@ -37,6 +38,35 @@
 .Arrow:hover {
   transition: 0.2s;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.Image {
+  transform: translateX(-100%);
+}
+
+.Slide-In-Left {
+  animation: slide-in-left 0.6s ease-in-out forwards;
+}
+
+.Slide-In-Right {
+  animation: slide-in-right 0.6s ease-in-out forwards;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
