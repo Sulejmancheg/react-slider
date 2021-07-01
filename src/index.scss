@@ -1,0 +1,42 @@
+.Slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    border: #282c34 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+.Arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: hsl(180, 100%, 50%);
+}
+
+.Arrow {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-family: monospace;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 0.5em;
+    color: transparent;
+    transition: 1s;
+
+    &:last-child{
+        transform: rotate(0.5turn);
+    }
+
+    &:hover {
+        transition: 0.2s;
+        color: hsla(0, 50%, 100%, 30%);
+    }
+}

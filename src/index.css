@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  border: #282c34 1px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Arrows {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: aqua;
 }
+
+.Arrow {
+  width: 50%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-family: monospace;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 0.5em;
+  color: transparent;
+  transition: 1s;
+}
+.Arrow:last-child {
+  transform: rotate(0.5turn);
+}
+.Arrow:hover {
+  transition: 0.2s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*# sourceMappingURL=index.css.map */
